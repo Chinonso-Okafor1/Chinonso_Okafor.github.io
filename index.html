@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* General Page Settings */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 40px; 
+            background-color: #f4f4f4; 
+        }
+
+        /* The main white box */
+        .container { 
+            display: flex; 
+            max-width: 1200px; 
+            margin: auto; 
+            background: white; 
+            box-shadow: 0 0 20px rgba(0,0,0,0.1); 
+            border-radius: 10px; 
+            overflow: hidden; 
+        }
+
+        /* LEFT SIDEBAR (NOW WHITE) */
+        .left-col { 
+            flex: 1; 
+            background-color: white; /* Changed from dark blue to white */
+            color: #2c3e50; 
+            padding: 40px; 
+            max-width: 300px; 
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centers everything */
+            text-align: center;
+        }
+
+        /* RIGHT COLUMN */
+        .right-col { 
+            flex: 3; 
+            padding: 40px; 
+            border-left: 1px solid #eee; /* Light gray dividing line */
+        }
+
+        /* Headings Color */
+        h1, h2, h3 { color: #2c3e50; margin-top: 0; }
+        
+        /* THE BLUE TOP NAME (Like Cynthia's) */
+        .page-name { 
+            color: #3498db; /* Your blue color */
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            align-self: flex-start; /* Aligns this specific item left */
+        }
+
+        /* Profile Picture */
+        .profile-pic { 
+            width: 150px; 
+            height: 150px; 
+            border-radius: 50%; 
+            margin-bottom: 20px; 
+            object-fit: cover; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+        }
+
+        /* Banner Image */
+        .header-banner { 
+            width: 100%; 
+            border-radius: 5px; 
+            margin-bottom: 30px; 
+            display: block; /* Helps with alignment */
+        }
+
+        /* Main Portfolio Title above banner */
+        .portfolio-title {
+            color: #2c3e50;
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* Project content styles */
+        hr { border: 0; border-top: 1px solid #eee; margin: 20px 0; }
+        a { color: #3498db; text-decoration: none; font-weight: bold; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="left-col">
+        <div class="page-name">Chinonso Okafor</div>
+        
+        <img src="profile-picture-Chinonso.jpeg" class="profile-pic" alt="Chinonso Okafor Profile">
+        
+        <p><b>Data Analyst</b></p>
+        <p>B.Sc. Computer Science. Specialist in data integrity and analytical reporting.</p>
+        <br>
+        <a href="https://linkedin.com/in/chinonso-okafor-ab0913219">LinkedIn Profile</a>
+    </div>
+
+    <div class="right-col">
+        <div class="portfolio-title">My Data Analytics Portfolio</div>
+
+        <img src="Data-analyst-portfolio-header-design.png" class="header-banner">
+        
+        <h2>Featured Projects</h2>
+        <hr>
+        <h3>Bike Share Demand Analysis (Capstone)</h3>
+        <p>Analyzed user behavior patterns using <b>R and Tableau</b> to drive marketing strategy recommendations.</p>
+        
+        <h3>Data Integrity & Validation</h3>
+        <p>Managed high-signal transactional data at Moniepoint, ensuring <b>100% integrity</b> through systematic tracking.</p>
+
+        <h3>Operational Reporting</h3>
+        <p>Built data infrastructure for 348 personnel at Firstbank and developed analytical reports for senior management.</p>
+    </div>
+</div>
+
+</body>
+</html>
