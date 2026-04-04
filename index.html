@@ -38,7 +38,10 @@
         .right-col { 
             flex: 3; 
             padding: 40px; 
-            border-left: 1px solid #eee; /* Light gray dividing line */
+            border-left: 1px solid #eee;
+            height: 85vh;            /* Sets the height to 85% of the screen */
+            overflow-y: auto;        /* Adds the vertical scroll bar only when needed */
+            scrollbar-width: thin;   /* Makes the scrollbar look sleek (Firefox) */
         }
 
         /* Headings Color */
