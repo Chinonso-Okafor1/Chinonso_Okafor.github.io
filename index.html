@@ -46,21 +46,24 @@
         
         /* THE BLUE TOP NAME (Like Cynthia's) */
         .page-name { 
-            color: #3498db; /* Your blue color */
-            font-size: 2.5em;
+            color: #000000;
+            font-size: 1.2em;
             font-weight: bold;
-            margin-bottom: 20px;
-            align-self: flex-start; /* Aligns this specific item left */
+            margin-bottom: 15px;
+            white-space: nowrap;
+            text-align: center;
+            width: 100%; /* Aligns this specific item left */
         }
 
         /* Profile Picture */
         .profile-pic { 
-            width: 150px; 
-            height: 150px; 
+            width: 190px;         /* Increased from 150px */
+            height: 190px;        /* Increased from 150px */
             border-radius: 50%; 
             margin-bottom: 20px; 
             object-fit: cover; 
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+            border: 3px solid #f0f0f0; /* Adds a subtle professional frame */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08); /* Softens the shadow */
         }
 
         /* Banner Image */
