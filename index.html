@@ -33,13 +33,21 @@
             align-items: center; 
             text-align: center;
             
-            /* ADD THESE THREE LINES FOR THE SCROLL EFFECT */
+            /* STICKY BEHAVIOR */
             position: sticky;
             top: 0;
             height: 100vh;
-            overflow-y: auto; /* In case your 'About Me' is very long */
+
+            /* HIDE SCROLLBAR FOR ALL BROWSERS */
+            overflow-y: auto;
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
         }
 
+        /* HIDE SCROLLBAR FOR CHROME, SAFARI, AND OPERA */
+        .left-col::-webkit-scrollbar {
+            display: none;
+        }
         /* RIGHT COLUMN */
         .right-col {
     flex: 1;
