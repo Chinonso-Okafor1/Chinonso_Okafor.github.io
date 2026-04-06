@@ -35,14 +35,15 @@
         }
 
         /* RIGHT COLUMN */
-        .right-col { 
-            flex: 3; 
-            padding: 40px; 
-            border-left: 1px solid #eee;
-            height: 85vh;            /* Sets the height to 85% of the screen */
-            overflow-y: auto;        /* Adds the vertical scroll bar only when needed */
-            scrollbar-width: thin;   /* Makes the scrollbar look sleek (Firefox) */
-        }
+        .right-col {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    /* REMOVE height: 500px; */
+    /* REMOVE overflow-y: scroll; */
+    display: flex;
+    flex-direction: column;
+}
 
         /* Headings Color */
         h1, h2, h3 { color: #2c3e50; margin-top: 0; }
@@ -125,47 +126,37 @@
     </div>
         </div>
     <div class="right-col">
-        <div class="portfolio-title">My Data Analytics Portfolio</div>
-
-        <img src="Data-analyst-portfolio-header-design.png" class="header-banner">
-        
-        <h2>Featured Projects</h2>
-       <hr>
-<a href="https://www.kaggle.com/code/nonowilson/capstone-project" target="_blank" style="text-decoration: none;">
-    <h3 style="color: #2c3e50; margin-bottom: 10px;">Bike Share Demand Analysis (Capstone)</h3>
-</a>
-
-<img src="casual-vs-member-usage.png" style="width: 100%; max-width: 600px; border-radius: 5px; margin-bottom: 15px; border: 1px solid #eee;">
-
-<p>I used R to analyze over 5.7 million rows of data to identify how annual members and casual riders use Cyclistic bikes differently.</p>
-
-<hr>
-
-
-    </div>
-</div>
-<hr>
+    <div class="portfolio-title">My Data Analytics Portfolio</div>
+    <img src="Data-analyst-portfolio-header-design.png" class="header-banner">
     
-    <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 40px; margin-bottom: 20px;">
+    <h2>Featured Projects</h2>
+    <hr>
+    
+    <a href="https://www.kaggle.com/code/nonowilson/capstone-project" target="_blank">
+        <h3>Bike Share Demand Analysis (Capstone)</h3>
+    </a>
+    <img src="casual-vs-member-usage.png">
+    <p>I used R to analyze over 5.7 million rows of data...</p>
+
+    <hr style="border: 0; border-top: 1px solid #eee; margin-top: 40px;">
+    
+    <div style="display: flex; flex-direction: column; gap: 20px; margin-top: 20px; padding-left: 10px;">
         
-        <div style="display: flex; align-items: center; gap: 10px;">
-            <img src="https://cdn-icons-png.flaticon.com/512/2983/2983067.png" alt="Resume" style="width: 20px; height: 20px;">
-            <a href="Chinonso_Okafor_CV.pdf" target="_blank" style="color: #2980b9; font-weight: bold; text-decoration: none; font-size: 1.1em;">Resume</a>
+        <div style="display: flex; align-items: center; gap: 12px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/2983/2983067.png" alt="Resume" style="width: 32px; height: 32px;">
+            <a href="Chinonso_Okafor_CV.pdf" target="_blank" style="color: #2980b9; font-weight: bold; text-decoration: none; font-size: 1.2em;">Resume</a>
         </div>
 
-        <div style="display: flex; align-items: center; gap: 10px;">
-            <img src="https://cdn.worldvectorlogo.com/logos/tableau-software.svg" alt="Tableau" style="width: 20px; height: 20px;">
-            <a href="https://public.tableau.com/app/profile/chinonso.okafor1541" target="_blank" style="color: #2980b9; font-weight: bold; text-decoration: none; font-size: 1.1em;">Tableau</a>
+        <div style="display: flex; align-items: center; gap: 12px;">
+            <img src="https://cdn.worldvectorlogo.com/logos/tableau-software.svg" alt="Tableau" style="width: 32px; height: 32px;">
+            <a href="https://public.tableau.com/app/profile/chinonso.okafor1541" target="_blank" style="color: #2980b9; font-weight: bold; text-decoration: none; font-size: 1.2em;">Tableau</a>
         </div>
 
-        <div style="display: flex; align-items: center; gap: 10px;">
-            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="width: 20px; height: 20px;">
-            <a href="https://linkedin.com/in/chinonso-okafor-ab0913219" target="_blank" style="color: #2980b9; font-weight: bold; text-decoration: none; font-size: 1.1em;">LinkedIn</a>
+        <div style="display: flex; align-items: center; gap: 12px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="width: 32px; height: 32px;">
+            <a href="https://linkedin.com/in/chinonso-okafor-ab0913219" target="_blank" style="color: #2980b9; font-weight: bold; text-decoration: none; font-size: 1.2em;">LinkedIn</a>
         </div>
-
     </div>
 
-</div>
+</div> ```
 
-</body>
-</html>
