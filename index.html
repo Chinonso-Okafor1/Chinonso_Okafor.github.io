@@ -77,12 +77,12 @@
 
 /* Update the banner to stretch full width */
 .header-banner {
-    width: 100%;           /* This fills the white area */
-    max-width: none;       /* Removes any previous size limits */
-    height: auto;          /* Maintains the image shape */
-    border-radius: 8px;    /* Keeps the nice rounded corners */
-    display: block;        /* Ensures it sits correctly */
-    margin: 0 auto 30px 0; /* Aligns left and adds space below */
+    width: 100%;           /* Stretches it to the right edge */
+    height: 200px;         /* This locks the vertical height to be slim like LinkedIn */
+    object-fit: cover;     /* CRITICAL: This crops the image so it doesn't look squished */
+    border-radius: 8px; 
+    display: block;
+    margin-bottom: 30px; 
 }
 
 /* Also ensure the right-col itself doesn't have too much padding squeezing the image */
