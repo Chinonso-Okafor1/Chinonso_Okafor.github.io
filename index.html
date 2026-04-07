@@ -10,44 +10,35 @@
             background-color: #f4f4f4; 
         }
 
-        /* The main white box */
-        .container { 
-            display: flex; 
-            max-width: 1200px; 
-            margin: auto; 
-            background: white; 
-            box-shadow: 0 0 20px rgba(0,0,0,0.1); 
-            border-radius: 10px; 
-            overflow: hidden; 
-        }
+        /* This is the wrapper for both columns */
+.container {
+    display: flex;
+    align-items: flex-start; /* CRITICAL: This allows the sticky element to work */
+    width: 100%;
+}
 
-      /* LEFT SIDEBAR (FIXED/STICKY) */
-        .left-col { 
-            flex: 1; 
-            background-color: white; 
-            color: #2c3e50; 
-            padding: 40px; 
-            max-width: 300px; 
-            display: flex;
-            flex-direction: column;
-            align-items: center; 
-            text-align: center;
-            
-            /* STICKY BEHAVIOR */
-            position: sticky;
-            top: 0;
-            height: 100vh;
+/* LEFT SIDEBAR */
+.left-col { 
+    flex: 0 0 300px; /* Keeps it a fixed width */
+    background-color: white; 
+    padding: 40px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    border-right: 1px solid #e0e0e0;
 
-            /* HIDE SCROLLBAR FOR ALL BROWSERS */
-            overflow-y: auto;
-            -ms-overflow-style: none;  /* IE and Edge */
-            scrollbar-width: none;  /* Firefox */
-        }
-
-        /* HIDE SCROLLBAR FOR CHROME, SAFARI, AND OPERA */
-        .left-col::-webkit-scrollbar {
-            display: none;
-        }
+    /* STICKY SETTINGS */
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    height: 100vh; /* Keeps it full screen height */
+    
+    /* HIDE SCROLLBAR */
+    overflow-y: auto;
+    -ms-overflow-style: none;  /* IE/Edge */
+    scrollbar-width: none;  /* Firefox */
+}
         /* RIGHT COLUMN */
         .right-col {
     flex: 1;
