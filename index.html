@@ -75,22 +75,22 @@
             box-shadow: 0 4px 10px rgba(0,0,0,0.08); /* Softens the shadow */
         }
 
-       /* Banner Image - Now Full Width */
+/* Update the banner to stretch full width */
 .header-banner {
-    width: 60%;       /* This makes it cover the full length of the column */
-    height: 20%;      /* Keeps the image from looking stretched */
-    border-radius: 8px; 
-    margin-bottom: 30px; 
-    display: block;
+    width: 100%;           /* This fills the white area */
+    max-width: none;       /* Removes any previous size limits */
+    height: auto;          /* Maintains the image shape */
+    border-radius: 8px;    /* Keeps the nice rounded corners */
+    display: block;        /* Ensures it sits correctly */
+    margin: 0 auto 30px 0; /* Aligns left and adds space below */
 }
 
-        /* Main Portfolio Title above banner */
-        .portfolio-title {
-            color: #2c3e50;
-            font-size: 2em;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
+/* Also ensure the right-col itself doesn't have too much padding squeezing the image */
+.right-col {
+    flex: 1;
+    padding: 20px;         /* You can adjust this to 0 if you want it perfectly edge-to-edge */
+    background-color: #ffffff;
+}
 
         /* Project content styles */
         hr { border: 0; border-top: 1px solid #eee; margin: 20px 0; }
@@ -131,7 +131,6 @@
     </div>
         </div>
     <div class="right-col">
-    <div class="portfolio-title">My Data Analytics Portfolio</div>
     <img src="Data-analytics-banner-design.png" class="header-banner">
     
     <h2>Featured Projects</h2>
@@ -181,5 +180,5 @@
         </div>
     </div>
 
-</div> ```
+</div>
 
